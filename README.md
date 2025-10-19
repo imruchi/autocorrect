@@ -22,8 +22,9 @@ A system-wide real-time writing assistant for macOS that uses Google's Gemini AP
 ### 2. Installation
 
 ```bash
-# Clone or navigate to the project directory
-cd /Users/ruchibommaraju/Northwestern/thoughts/autocomplete
+# Clone the repository
+git clone https://github.com/imruchi/autocorrect.git
+cd autocorrect
 
 # Install dependencies
 pip install -r requirements.txt
@@ -203,7 +204,7 @@ Create `~/Library/LaunchAgents/com.writingassistant.plist`:
     <key>ProgramArguments</key>
     <array>
         <string>/usr/bin/python3</string>
-        <string>/Users/ruchibommaraju/Northwestern/thoughts/autocomplete/main.py</string>
+        <string>/path/to/autocorrect/main.py</string>
     </array>
     <key>RunAtLoad</key>
     <true/>

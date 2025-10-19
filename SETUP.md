@@ -26,8 +26,9 @@ Before you begin, ensure you have:
 ### Step 2: Install Dependencies
 
 ```bash
-# Navigate to project directory
-cd /Users/ruchibommaraju/Northwestern/thoughts/autocomplete
+# Clone the repository
+git clone https://github.com/imruchi/autocorrect.git
+cd autocorrect
 
 # Install required Python packages
 pip3 install -r requirements.txt
@@ -148,7 +149,7 @@ You'll likely see an error about permissions. That's normal!
 
 **Solution:** Make sure you're in the correct directory:
 ```bash
-pwd  # Should show: /Users/ruchibommaraju/Northwestern/thoughts/autocomplete
+pwd  # Should show the autocorrect directory
 ls config.yaml  # Should exist
 ```
 
@@ -229,7 +230,7 @@ If you want the assistant to start automatically when you log in:
 1. Create a shell script `start_assistant.sh`:
    ```bash
    #!/bin/bash
-   cd /Users/ruchibommaraju/Northwestern/thoughts/autocomplete
+   cd /path/to/autocorrect
    /usr/bin/python3 main.py
    ```
 
