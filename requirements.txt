@@ -1,0 +1,5 @@
+google-generativeai>=0.3.0
+pynput>=1.7.6
+pyobjc-framework-Cocoa>=9.0
+pyobjc-framework-Quartz>=9.0
+PyYAML>=6.0

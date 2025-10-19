@@ -1,0 +1,30 @@
+# Writing Assistant Configuration
+
+# Gemini API Settings
+gemini:
+  api_key: "YOUR_API_KEY_HERE"  # Get from: https://aistudio.google.com/app/apikey
+  model: "gemini-2.0-flash-exp"  # Fast, free tier model
+  max_retries: 3
+  timeout: 10  # seconds
+
+# Hotkey Settings (macOS)
+hotkeys:
+  grammar_fix: "cmd+shift+g"  # Fix grammar and spelling
+  formal: "cmd+shift+f"       # Make more formal
+  casual: "cmd+shift+c"       # Make more casual
+  simplify: "cmd+shift+s"     # Simplify text
+  expand: "cmd+shift+e"       # Expand/elaborate
+
+# Rate Limiting (Gemini free tier: 60 req/min)
+rate_limit:
+  requests_per_minute: 50  # Conservative limit
+
+# UI Settings
+ui:
+  show_notifications: true
+  notification_duration: 2  # seconds
+
+# Logging
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  file: "writing_assistant.log"
